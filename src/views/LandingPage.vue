@@ -5,7 +5,7 @@
     <p class="text-xl mb-4 text-red-600">Get ready to experience the thrill of the Champions League final!</p>
     <p class="text-lg mb-4 text-navy-blue">Join the thousands of passionate Tottenham Hotspur and Arsenal fans from around the world who will be tuning in to watch this historic match.</p>
     <p class="text-lg mb-4 text-navy-blue">But don't just watch from the sidelines – be a part of the action and purchase your tickets today!</p>
-    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" @click="goToLogin">Log In</button>
+    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" @click="goToLogin">Sign In</button>
   </div>
 </template>
 
