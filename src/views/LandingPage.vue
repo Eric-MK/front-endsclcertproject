@@ -11,16 +11,16 @@
 
 
 
-<style>
- .landing-page {
+<!-- <style>
+ /* .landing-page {
 /*   background-image: url('/home1.jpg'); 
- */  background-size: ;
+ */  /* background-size: ; */
   background-position: center;
-  opacity: ;
-} 
+  /* opacity: ; */
+}  */
  
 
-</style> 
+</style>  -->
 
 <script>
 export default {
