@@ -17,10 +17,10 @@
   </template>
   
   <script>
-
-  
-
-  </script>
+export default {
+  name: 'MyNavigation',
+}
+</script>
   
   <style>
  nav {
