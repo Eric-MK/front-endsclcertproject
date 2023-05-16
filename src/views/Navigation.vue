@@ -1,13 +1,13 @@
 <template>
     <nav>
       <ul>
-        <li>
+        <li class="kr">
           <router-link to="/home">Home</router-link>
         </li>
-        <li>
+        <li class="kr">
           <router-link to="/tottenham-players">Tottenham Players</router-link>
         </li>
-        <li>
+        <li class="kr">
           <router-link to="/arsenal-players">Arsenal Players</router-link>
         </li>
       </ul>
@@ -36,11 +36,11 @@ ul {
   margin: 0;
 }
 
-li {
+.kr {
   margin: 0 10px;
 }
 
-li {
+.kr {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -48,7 +48,7 @@ li {
   border-radius: 5px;
 }
 
-li:hover {
+.kr:hover {
   background-color: #423e3e;
 }
 
