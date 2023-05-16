@@ -1,31 +1,29 @@
 <template>
-    <nav>
-      <ul>
-        <li class="kr">
-          <router-link to="/home">Home</router-link>
-        </li>
-        <li class="kr">
-          <router-link to="/tottenham-players">Tottenham Players</router-link>
-        </li>
-        <li class="kr">
-          <router-link to="/arsenal-players">Arsenal Players</router-link>
-        </li>
-      </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li class="centered">
+        <router-link to="/home">Home</router-link>
+      </li>
+      <li class="centered">
+        <router-link to="/tottenham-players">Tottenham Players</router-link>
+      </li>
+      <li class="centered">
+        <router-link to="/arsenal-players">Arsenal Players</router-link>
+      </li>
+    </ul>
+    <div class="profile-link">
+      <router-link to="/profile-page">
+        <img src="user.png" alt="Profile" class="profile-icon" />
+      </router-link>
+    </div>
+  </nav>
+</template>
 
-    
-  </template>
-  
-  <script>
-export default {
-  name: 'MyNavigation',
-}
-</script>
-  
-  <style>
- nav {
+<style>
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centers the tabs */
+  align-items: center; /* Vertically centers the items */
   background-color: #05172e;
 }
 
@@ -36,11 +34,8 @@ ul {
   margin: 0;
 }
 
-.kr {
+.centered {
   margin: 0 10px;
-}
-
-.kr {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -48,8 +43,16 @@ ul {
   border-radius: 5px;
 }
 
-.kr:hover {
+.centered:hover {
   background-color: #423e3e;
 }
 
-  </style>
+.profile-link {
+  margin-left: 50%; /* Moves the profile link to the far right */
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+}
+</style>
