@@ -12,7 +12,7 @@
             Name
           </label>
           <input
-            v-model="user.name"
+            v-model="name"
             name="name"
             :class="{ 'border-red-500': errors.name }"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -30,7 +30,7 @@
             Email
           </label>
           <input
-            v-model="user.email"
+            v-model="email"
             name="email"
             :class="{ 'border-red-500': errors.email }"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -118,17 +118,24 @@ export default {
   },
   methods: {
     fetchUserProfile() {
-      const userId = this.$route.params.id;
-      axios
-        .get(`/api/user/${userId}/show`)
-        .then((response) => {
+        const user_id = localStorage.getItem("user_id");
+        console.log("user_id:", user_id);
+if (user_id) {
+    axios
+      .get(`http://127.0.0.1:8000/api/user/${user_id}/show`)
+      .then((response) => {
+        console.log(response);
           this.user = response.data.user;
           this.loading = false;
         })
         .catch((error) => {
           console.log(error);
           this.loading = false;
-        });
+        });     
+    
+}else {
+console.log("error error")
+  }
     },
     updateProfile() {
       const userId = this.$route.params.id;
@@ -142,7 +149,7 @@ export default {
         formData.append("profile_image", this.profileImage);
       }
       axios
-        .put(`/api/user/${userId}/update`, formData, {
+        .put(`http://127.0.0.1:8000/api/user/${userId}/update`, formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -160,7 +167,7 @@ export default {
     deleteProfile() {
       const userId = this.$route.params.id;
       axios
-        .delete(`/api/user/${userId}/delete`)
+        .delete(`http://127.0.0.1:8000/api/user/${userId}/delete`)
         .then(() => {
           this.$router.push("/logout");
         })
