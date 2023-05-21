@@ -1,4 +1,5 @@
 <template>
+    <MyNavigation/>
     <div class="profile-page">
       <h1 class="text-3xl mb-8 font-bold text-gray-700 text-center">
         User Profile
@@ -116,9 +117,14 @@
       </div>
     </form>
   </div>
+  <MyFooter/>
+
 </template>
 
 <script>
+import MyNavigation from '../views/Navigation.vue'
+import MyFooter from '../views/Footer.vue'
+
 import axios from "axios";
 
 export default {
@@ -135,7 +141,11 @@ export default {
       loading: true,
       user_id: "",
       userLoaded: false,
-    };
+    }
+  },
+  components: {
+    MyNavigation,
+     MyFooter
   },
   mounted() {
     this.fetchUserProfile();
