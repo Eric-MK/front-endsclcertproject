@@ -130,7 +130,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #e00b0b;
+  color: #0c0505;
   text-align: center;
 }
 
