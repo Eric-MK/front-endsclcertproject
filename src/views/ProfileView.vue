@@ -1,6 +1,6 @@
 <template>
     <MyNavigation/>
-    <div class="profile-page">
+    <div class="profile-page bg-white py-8">
       <h1 class="text-3xl mb-8 font-bold text-gray-700 text-center">
         User Profile
       </h1>
@@ -8,7 +8,7 @@
         Loading...
       </div>
   
-      <form v-else @submit.prevent="updateProfile">
+      <form v-else @submit.prevent="updateProfile" class="max-w-md mx-auto">
         <div class="mb-4">
           <label class="block text-gray-700 font-bold mb-2" for="name">
             Name
@@ -84,8 +84,8 @@
           </p>
         </div>
         <div class="mb-6">
-          <label class="block text-gray-700 font-bold mb-2" for="profile_image">
-            Profile Image
+            <label class="block text-gray-700 font-bold mb-2" for="profile_image">
+          Profile Image
         </label>
         <input
           ref="profileImage"
@@ -102,7 +102,7 @@
       </div>
       <div class="flex items-center justify-between">
         <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
         >
           Save Changes
@@ -114,12 +114,19 @@
         >
           Delete Profile
         </button>
+        <button
+        class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="button"
+        @click="logout"
+      >
+        Logout
+      </button>
       </div>
     </form>
   </div>
   <MyFooter/>
-
 </template>
+  
 
 <script>
 import MyNavigation from '../views/Navigation.vue'
@@ -211,7 +218,7 @@ export default {
       axios
         .delete(`http://127.0.0.1:8000/api/user/${userId}/delete`)
         .then(() => {
-          this.$router.push("/logout");
+          this.$router.push("/login");
         })
         .catch((error) => {
           console.log(error);
@@ -220,6 +227,10 @@ export default {
     handleProfileImageChange(event) {
       this.profileImage = event.target.files[0];
     },
+    logout() {
+      localStorage.removeItem("user_id");
+      this.$router.push("/");
+    }
   },
 };
 </script>
