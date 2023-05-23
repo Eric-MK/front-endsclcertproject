@@ -1,17 +1,17 @@
 <template>
   <div class="login-page min-h-screen flex flex-col justify-center items-center">
-    <h1 class="text-3xl mb-8 font-bold text-gray-700 text-center">
+    <h1 class="text-3xl mb-8 font-bold text-indigo-100 text-center">
       Log In to SpursMatchUp
     </h1>
-    <form class="bg-white rounded-lg shadow-md p-8 max-w-md w-full" @submit.prevent="loginUser">
+    <form class="bg-black rounded-lg shadow-md p-8 max-w-md w-full" @submit.prevent="loginUser">
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="email">
+        <label class="block text-blue-900 font-bold mb-2" for="email">
           Email
         </label>
         <input
           v-model="email"
           :class="{ 'border-red-500': errors.email }"
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
           id="email"
           type="email"
           placeholder="Enter your email"
@@ -22,7 +22,7 @@
         </p>
       </div>
       <div class="mb-6">
-        <label class="block text-gray-700 font-bold mb-2" for="password">
+        <label class="block text-blue-900 font-bold mb-2" for="password">
           Password
         </label>
         <input
@@ -40,7 +40,7 @@
       </div>
       <div class="flex items-center justify-between">
         <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
           type="submit"
         >
           Log In
@@ -55,6 +55,19 @@
     </form>
   </div>
 </template>
+
+
+<style>
+.login-page {
+background-image: url('/home2.jpg'); 
+ background-size: ; 
+  background-position: center;
+  background-attachment: fixed;
+} 
+
+
+
+</style>
 
 <script>
 import axios from "axios";
