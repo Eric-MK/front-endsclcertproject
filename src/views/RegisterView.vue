@@ -36,8 +36,8 @@
   <style>
 body{
 background-image: url('/home2.jpg');  
- background-size: ; 
-  background-position: center;
+/*  background-size: ; 
+ */  background-position: center;
   background-attachment: fixed;
 } 
 </style>

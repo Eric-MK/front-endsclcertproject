@@ -14,7 +14,7 @@
 <style>
 .landing-page {
 background-image: url('/home2.jpg'); 
- background-size: ; 
+/*  background-size: ;  */
   background-position: center;
   background-attachment: fixed;
 }  
