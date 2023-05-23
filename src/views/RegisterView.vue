@@ -1,32 +1,46 @@
 <template>
+  <body>
+    
+ 
     <div class="container mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Registration</h2>
+      <h2 class="text-2xl font-bold mb-4 text-indigo-100 mt-10">Registration</h2>
+
       <form @submit.prevent="registerUser" class="max-w-sm mx-auto">
         <div class="mb-4">
-          <label for="name" class="text-sm font-medium">Name:</label>
+          <label for="name" class="text-lg font-medium text-blue-900">Name:</label>
           <input type="text" id="name" v-model="formData.name" required class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400" />
         </div>
         <div class="mb-4">
-          <label for="email" class="text-sm font-medium">Email:</label>
+          <label for="email" class="text-lg font-medium text-blue-900">Email:</label>
           <input type="email" id="email" v-model="formData.email" required class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400" />
         </div>
         <div class="mb-4">
-          <label for="password" class="text-sm font-medium">Password:</label>
+          <label for="password" class="text-lg font-medium text-blue-900 ">Password:</label>
           <input type="password" id="password" v-model="formData.password" required class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400" />
         </div>
         <div class="mb-4">
-          <label for="password_confirmation" class="text-sm font-medium">Confirm Password:</label>
+          <label for="password_confirmation" class="text-lg font-medium text-blue-900">Confirm Password:</label>
           <input type="password" id="password_confirmation" v-model="formData.password_confirmation" required class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400" />
         </div>
-        <div class="mb-4">
+        <!-- <div class="mb-4">
           <label for="profile_image" class="text-sm font-medium">Profile Image:</label>
           <input type="file" id="profile_image" @change="onFileChange" accept="image/*" class="mt-1" />
-        </div>
-        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Register</button>
+        </div> -->
+        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Register</button>
       </form>
     </div>
+  </body>
   </template>
   
+
+  <style>
+body{
+background-image: url('/home2.jpg');  
+ background-size: ; 
+  background-position: center;
+  background-attachment: fixed;
+} 
+</style>
   <script>
 
 import axios from 'axios';
