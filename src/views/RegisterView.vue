@@ -75,7 +75,8 @@ import axios from 'axios';
             this.$router.push('/login');
           })
           .catch(error => {
-  if (error.response && error.response.status === 422) {
+
+        /*     if (error.response && error.response.status === 422) {
     // Validation errors occurred
     console.log(error.response.data);
   } else {
@@ -83,6 +84,23 @@ import axios from 'axios';
     // Handle other errors
   }
   alert('An error occurred. Please try again.');
+
+}); */
+            if (error.response && error.response.status === 422) {
+              // Validation errors occurred
+              const errors = error.response.data.errors;
+              let errorMessage = 'Validation errors occurred:\n';
+
+              for (let key in errors) {
+                errorMessage += `- ${errors[key][0]}\n`;
+              }
+
+              // Show validation error popup
+              alert(errorMessage);
+  } else {
+    console.error(error);
+    // Handle other errors
+  }
 
 });
 
