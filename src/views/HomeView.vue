@@ -6,7 +6,9 @@
     <div class="banner">
       <h1>{{ matchTitle }}</h1>
       <p>{{ matchDescription }}</p>
-      <button>Buy Tickets</button>
+
+      <router-link to="/ticket"><button>Buy Tickets</button></router-link>
+      
     </div>
     <div class="rivalry">
       <h2>The Rivalry</h2>
