@@ -1,89 +1,55 @@
 <template>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h4>About Us</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida odio vel cursus suscipit.</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-lg font-bold mb-4">About Us</h4>
+          <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida odio vel cursus suscipit.</p>
+          <div class="social-icons mt-4">
+            <a href="#" class="mr-2"><i class="fab fa-facebook text-white"></i></a>
+            <a href="#" class="mr-2"><i class="fab fa-twitter text-white"></i></a>
+            <a href="#" class="mr-2"><i class="fab fa-instagram text-white"></i></a>
           </div>
         </div>
-        <div class="footer-section">
-          <h4>Contact Us</h4>
-          <ul>
-            <li>Phone: 123-456-7890</li>
-            <li>Email: info@example.com</li>
-            <li>Address: 123 Main Street, City</li>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+          <ul class="contacts text-sm">
+            <li><strong>Phone:</strong> awesrfyguhjop</li>
+            <li><strong>Email:</strong> asdfguijopk[l]</li>
+            <li><strong>Address:</strong> 123 Main Street, City</li>
           </ul>
         </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="quick text-sm">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">About</a></li>
+            <li><a href="#" class="text-white">Services</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
           </ul>
         </div>
       </div>
-    </footer>
-  </template>
-  
-  <style>
-  .footer {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 2rem 0;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-section {
-    flex: 0 0 30%;
-    margin-bottom: 2rem;
-  }
-  
-  .footer-section h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footer-section p {
-    margin-bottom: 1rem;
-  }
-  
-  .footer-section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    margin-right: 1rem;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-  }
-  
-  .social-icons a:hover {
-    color: #CCE7FF;
-  }
-  
-  /* Add font-awesome CDN link to your index.html file */
-  </style>
+    </div>
+  </footer>
+</template>
 
+
+<style>
+
+.contacts{
+
+display: block;
+
+}
+
+.quick{
+  display: block;
+
+}
+
+</style>
+  
+ 
   <script>
   export default {
     name: 'MyFooter',

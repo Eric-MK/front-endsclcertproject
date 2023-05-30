@@ -119,10 +119,11 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
+  background-color: ;
 }
 
 .banner {
-  background-image: url('../assets/banner.jpg');
+  background-image: url('/home2.jpg');
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -130,7 +131,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #0c0505;
+  color: #e2c3c3;
   text-align: center;
 }
 

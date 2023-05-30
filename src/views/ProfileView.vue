@@ -59,7 +59,6 @@
             id="password"
             type="password"
             placeholder="Enter your new password"
-            required
           />
           <p v-if="errors.password" class="text-red-500 text-xs italic">
             {{ errors.password[0] }}
@@ -77,7 +76,6 @@
             id="password_confirmation"
             type="password"
             placeholder="Confirm your new password"
-            required
           />
           <p v-if="errors.password_confirmation" class="text-red-500 text-xs italic">
             {{ errors.password_confirmation[0] }}
