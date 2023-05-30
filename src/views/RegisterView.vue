@@ -82,6 +82,8 @@ import axios from 'axios';
     console.error(error);
     // Handle other errors
   }
+  alert('An error occurred. Please try again.');
+
 });
 
       },
