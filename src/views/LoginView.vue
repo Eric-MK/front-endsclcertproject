@@ -101,6 +101,8 @@ export default {
       } else {
         this.errors = { message: "An error occurred" };
       }
+      alert(this.errors.message);
+
     });
 },
 
