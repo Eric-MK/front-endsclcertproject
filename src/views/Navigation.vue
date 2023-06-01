@@ -8,7 +8,7 @@
         <router-link to="/tottenham-players">Tottenham Players</router-link>
       </li>
       <li class="centered">
-        <router-link to="/arsenal-players">Arsenal Players</router-link>
+        <router-link to="/ticket">Tickets</router-link>
       </li>
     </ul>
     <div class="profile-link">
