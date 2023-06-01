@@ -24,7 +24,7 @@ nav {
   display: flex;
   justify-content: center; /* Centers the tabs */
   align-items: center; /* Vertically centers the items */
-  background-color: #05172e;
+  background-color: #111827;
 }
 
 ul {
