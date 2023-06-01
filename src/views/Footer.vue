@@ -22,10 +22,9 @@
         <div>
           <h4 class="text-lg font-bold mb-4">Quick Links</h4>
           <ul class="quick text-sm">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">About</a></li>
+            <li><router-link to="/home">Home</router-link></li>
             <li><a href="#" class="text-white">Services</a></li>
-            <li><a href="#" class="text-white">Contact</a></li>
+            <li><router-link to="/profile-page">Profile</router-link></li>
           </ul>
         </div>
       </div>
