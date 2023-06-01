@@ -24,6 +24,7 @@
           <ul class="quick text-sm">
             <li><router-link to="/home">Home</router-link></li>
             <li><a href="#" class="text-white">Services</a></li>
+            <li><router-link to="/ticket">Tickets</router-link></li>
             <li><router-link to="/profile-page">Profile</router-link></li>
           </ul>
         </div>
