@@ -3,7 +3,7 @@
     <MyNavigation/>
 
     <div class="flex-grow container mx-auto">
-      <h2 class="text-2xl font-bold mb-4 text-indigo-100 mt-10">Ticket Management</h2>
+      <h2 class="text-2xl font-bold mb-4 text-black mt-10">Ticket Management</h2>
   
       <div v-if="ticket">
         <div class="mb-4">
