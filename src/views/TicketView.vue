@@ -8,7 +8,7 @@
       <div v-if="ticket">
         <div class="mb-4">
           <p class="text-lg font-medium text-blue-900">Ticket Information:</p>
-          <p>User ID: {{ ticket.user_id }}</p>
+          <p>User_ID: {{ ticket.user_id }}</p>
           <p>Quantity: {{ ticket.quantity }}</p>
           <p>Total Price: ${{ ticket.total_price }}</p>
         </div>
@@ -113,6 +113,7 @@ import MyFooter from '../views/Footer.vue'
       return {
         ticket: null,
         userId: localStorage.getItem('user_id'),
+        userName: '', // New property
         quantity: 1, // Default quantity value
 
       };
@@ -128,7 +129,10 @@ import MyFooter from '../views/Footer.vue'
       fetchTicket() {
         axios.get(`http://127.0.0.1:8000/api/tickets/${this.userId}`)
           .then(response => {
+            console.log(response.data); // Log the response data
+
             this.ticket = response.data.ticket;
+
           })
           .catch(error => {
             console.error(error);
