@@ -3,7 +3,7 @@
     <h1 class="text-3xl mb-8 font-bold text-indigo-100 text-center">
       Log In to SpursMatchUp
     </h1>
-    <form class="bg-black rounded-lg shadow-md p-8 max-w-md w-full" @submit.prevent="loginUser">
+    <form class="bg-slate-900		 rounded-lg shadow-md p-8 max-w-md w-full" @submit.prevent="loginUser">
       <div class="mb-4">
         <label class="block text-blue-900 font-bold mb-2" for="email">
           Email
