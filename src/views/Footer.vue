@@ -46,6 +46,10 @@ display: block;
   display: block;
 
 }
+/* strong{
+  color: #000080	;
+
+} */
 
 </style>
   
