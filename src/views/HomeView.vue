@@ -114,6 +114,8 @@ ul {
 .banner h1 {
   font-size: 60px;
   margin-bottom: 10px;
+  font-family: serif;
+
   
 }
 

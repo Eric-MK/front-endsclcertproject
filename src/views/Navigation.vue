@@ -6,13 +6,13 @@
         <h1 class="text-2xl font-bold text-white"><span style="font-style: oblique;"><u>SpursMatchUp</u></span></h1>
       </li>
       <li class="centered">
-        <router-link to="/home">Home</router-link>
+        <router-link to="/home" active-class="active-link">Home</router-link>
       </li>
       <li class="centered">
-        <router-link to="/tottenham-players">Tottenham Players</router-link>
+        <router-link to="/tottenham-players" active-class="active-link">Tottenham Players</router-link>
       </li>
       <li class="centered">
-        <router-link to="/ticket">Tickets</router-link>
+        <router-link to="/ticket" active-class="active-link">Tickets</router-link>
       </li>
     </ul>
     <div class="profile-link">
@@ -49,7 +49,7 @@ ul {
 }
 
 .centered:hover {
-  background-color: #423e3e;
+  text-decoration: underline;
 }
 
 .profile-link {
@@ -59,6 +59,14 @@ ul {
 .profile-icon {
   width: 30px;
   height: 30px;
+}
+
+.active-link {
+  background-color: rgb(0,0,139)
+;
+  padding: 10px;
+  border-radius: 5px;
+  
 }
 </style>
 
