@@ -6,9 +6,9 @@
           <h4 class="text-lg font-bold mb-4">About Us</h4>
           <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida odio vel cursus suscipit.</p>
           <div class="social-icons mt-4">
-            <a href="#" class="mr-2"><i class="fab fa-facebook text-white"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-twitter text-white"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-instagram text-white"></i></a>
+            <a href="#" class="mr-2"></a>
+            <a href="#" class="mr-2"></a>
+            <a href="#" class="mr-2"></a>
           </div>
         </div>
         <div>
@@ -22,11 +22,11 @@
         <div>
           <h4 class="text-lg font-bold mb-4">Quick Links</h4>
           <ul class="quick text-sm">
-            <li><router-link to="/home">Home</router-link></li>
-            <li><a href="#" class="text-white">Services</a></li>
-            <li><router-link to="/ticket">Tickets</router-link></li>
-            <li><router-link to="/profile-page">Profile</router-link></li>
-          </ul>
+  <li><router-link to="/home" exact-active-class="activee-link" class="nav-link">Home</router-link></li>
+  <li><a href="#" class="text-white nav-link">Services</a></li>
+  <li><router-link to="/ticket" exact-active-class="activee-link" class="nav-link">Tickets</router-link></li>
+  <li><router-link to="/profile-page" exact-active-class="activee-link" class="nav-link">Profile</router-link></li>
+</ul>
         </div>
       </div>
     </div>
@@ -47,9 +47,18 @@ display: block;
 
 }
 /* strong{
-  color: #000080	;
+  color:000080 #	;
 
 } */
+
+.activee-link{
+ 
+  color: blue;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
 
 </style>
   
