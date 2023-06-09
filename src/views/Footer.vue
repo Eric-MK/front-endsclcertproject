@@ -23,7 +23,7 @@
           <h4 class="text-lg font-bold mb-4">Quick Links</h4>
           <ul class="quick text-sm">
   <li><router-link to="/home" exact-active-class="activee-link" class="nav-link">Home</router-link></li>
-  <li><a href="#" class="text-white nav-link">Services</a></li>
+  <li><router-link to="/services" exact-active-class="activee-link" class="nav-link">Services</router-link></li>
   <li><router-link to="/ticket" exact-active-class="activee-link" class="nav-link">Tickets</router-link></li>
   <li><router-link to="/profile-page" exact-active-class="activee-link" class="nav-link">Profile</router-link></li>
 </ul>
