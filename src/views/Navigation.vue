@@ -9,7 +9,7 @@
         <router-link to="/home" active-class="active-link">Home</router-link>
       </li>
       <li class="centered">
-        <router-link to="/tottenham-players" active-class="active-link">Tottenham Players</router-link>
+        <router-link to="/services" active-class="active-link">Services</router-link>
       </li>
       <li class="centered">
         <router-link to="/ticket" active-class="active-link">Tickets</router-link>
@@ -62,8 +62,7 @@ ul {
 }
 
 .active-link {
-  background-color: rgb(0,0,139)
-;
+  background-color: rgb(0,0,139);
   padding: 10px;
   border-radius: 5px;
   
