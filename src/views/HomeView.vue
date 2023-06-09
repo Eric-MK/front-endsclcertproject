@@ -20,7 +20,7 @@
       <h2>The Rivalry</h2>
       <p>{{ rivalryDescription }}</p>
       <div class="trophy-section">
-        <h3>Trophies Won</h3>
+        <h3><b>Trophies Won:</b></h3>
         <div class="trophy">
           <div class="trophy-info">
             <h4>{{ tottenhamName }}</h4>
@@ -35,12 +35,13 @@
         </div>
       </div>
       <div class="greatest-players-section">
-        <h3>Team Players</h3>
+        <h3>Players to watch</h3>
         <div class="greatest-players">
           <div class="players-team">
             <h4>{{ tottenhamName }}</h4>
             <ul>
-              <li v-for="player in tottenhamPlayers" :key="player">{{ player }}</li>
+              <li v-for="player in tottenhamPlayers" :key="player">{{ player }} 
+              </li>
             </ul>
           </div>
           <div class="players-team">
@@ -343,11 +344,11 @@ export default {
       rivalryDescription: 'The rivalry between Tottenham and Arsenal dates back over a century, with both teams competing for dominance in North London. Tottenham has won 2 league titles, 8 FA Cups, and 4 League Cups, while Arsenal has won 13 league titles, 14 FA Cups, and 2 League Cups. The two teams have faced each other over 200 times in all competitions.',
       tottenhamName: 'Tottenham Hotspur',
       tottenhamTrophies: '2 League Titles, 8 FA Cups, 4 League Cups',
-      tottenhamPlayers: ['Harry Kane', 'Gareth Bale', 'Luka Modric', 'Son', 'Kulesevski', 'Pedro Perro', 'Cristian Romero', 'Lloris', 'Bentacur', 'Bissouma'],
+      tottenhamPlayers: ['Harry Kane', 'Heungmin Son', 'Pedro Perro', 'Cristian Romero', 'Rodrigo Bentacur', 'Yves Bissouma'],
       tottenhamManagers: ['Mauricio Pochettino'],
       arsenalName: 'Arsenal',
       arsenalTrophies: '13 League Titles, 14 FA Cups, 2 League Cups',
-      arsenalPlayers: ['Thierry Henry', 'Dennis Bergkamp', 'Tony Adams', 'Ian Wright', 'Patrick Vieira'],
+      arsenalPlayers: ['Gabriel Jesus', 'Gabriel Mertinelli', ' Thomas Partey', 'Ben White', 'Bukayo Saka','Martin Odegaard',],
       arsenalManagers: ['Arsene Wenger'],
     }
   },
