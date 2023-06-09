@@ -90,31 +90,6 @@ ul {
   list-style: none;
 }
 
-/* Navigation */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  padding: 0 20px;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-link {
-  margin-left: 30px;
-  color: #fff;
-  font-size: 18px;
-}
 
 /* Homepage */
 .homepage {
@@ -132,18 +107,19 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #e2c3c3;
+  color: #F5F5F5;
   text-align: center;
 }
 
 .banner h1 {
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  
 }
 
 .banner p {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 
 .banner button {
@@ -154,6 +130,8 @@ ul {
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 150px;
+
 }
 
 .banner button:hover {
