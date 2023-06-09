@@ -123,9 +123,9 @@ ul {
 }
 
 .banner button {
-  background-color: #fff;
+  background-color: #d61717	;
   border: none;
-  color: #333;
+  color: #f5eeee;
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 4px;
@@ -135,7 +135,7 @@ ul {
 }
 
 .banner button:hover {
-  background-color: #333;
+  background-color: #8a0707;
   color: #fff;
 }
 
