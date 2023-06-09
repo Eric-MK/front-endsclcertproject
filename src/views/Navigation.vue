@@ -1,6 +1,10 @@
 <template>
+  
   <nav>
     <ul>
+      <li>
+        <h1 class="text-2xl font-bold text-white"><span style="font-style: oblique;"><u>SpursMatchUp</u></span></h1>
+      </li>
       <li class="centered">
         <router-link to="/home">Home</router-link>
       </li>
@@ -17,6 +21,7 @@
       </router-link>
     </div>
   </nav>
+
 </template>
 
 <style>
