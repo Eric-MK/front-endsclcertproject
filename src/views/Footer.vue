@@ -14,8 +14,8 @@
         <div>
           <h4 class="text-lg font-bold mb-4">Contact Us</h4>
           <ul class="contacts text-sm">
-            <li><strong>Phone:</strong> awesrfyguhjop</li>
-            <li><strong>Email:</strong> asdfguijopk[l]</li>
+            <li><strong>Phone:</strong> 110-567-984</li>
+            <li><strong>Email:</strong> SpursMatchUp@gmail.co.ke</li>
             <li><strong>Address:</strong> 123 Main Street, City</li>
           </ul>
         </div>
