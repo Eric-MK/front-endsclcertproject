@@ -10,6 +10,12 @@
       <router-link to="/ticket"><button>Buy Tickets</button></router-link>
       
     </div>
+<div class="match-details mt-5">
+  <p class="text-lg"> <strong>Venue : </strong>{{ venue }}</p>
+  <p class="text-lg"> <strong>Place : </strong>{{ place }}</p>
+  <p class="text-lg"><strong>Time : </strong>{{ time }}</p>
+</div>
+
     <div class="rivalry">
       <h2>The Rivalry</h2>
       <p>{{ rivalryDescription }}</p>
@@ -326,6 +332,12 @@ export default {
     name: 'Homepage',
   data() {
     return {
+
+      matchTitle: 'The Historic Match',
+      matchDescription: 'The biggest match of the season featuring Tottenham and Arsenal.',
+      venue: 'Wembley Stadium',
+      place: 'London, England',
+      time: '20:00 PM GMT',
       matchTitle: 'The Historic Match',
       matchDescription: 'The biggest match of the season featuring Tottenham and Arsenal.',
       rivalryDescription: 'The rivalry between Tottenham and Arsenal dates back over a century, with both teams competing for dominance in North London. Tottenham has won 2 league titles, 8 FA Cups, and 4 League Cups, while Arsenal has won 13 league titles, 14 FA Cups, and 2 League Cups. The two teams have faced each other over 200 times in all competitions.',

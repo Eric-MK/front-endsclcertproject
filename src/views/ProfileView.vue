@@ -82,10 +82,10 @@
           </p>
         </div>
         <div class="mb-6">
-            <label class="block text-gray-700 font-bold mb-2" for="profile_image">
+            <!-- <label class="block text-gray-700 font-bold mb-2" for="profile_image">
           Profile Image
-        </label>
-        <input
+        </label> -->
+     <!--    <input
           ref="profileImage"
           name="profile_image"
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -96,7 +96,7 @@
         />
         <p v-if="errors.profile_image" class="text-red-500 text-xs italic">
           {{ errors.profile_image[0] }}
-        </p>
+        </p> -->
       </div>
       <div class="flex items-center justify-between">
         <button
