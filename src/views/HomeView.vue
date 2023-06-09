@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="greatest-players-section">
-        <h3>Greatest Players</h3>
+        <h3>Team Players</h3>
         <div class="greatest-players">
           <div class="players-team">
             <h4>{{ tottenhamName }}</h4>
@@ -52,8 +52,8 @@
         </div>
       </div>
       <div class="greatest-managers-section">
-        <h3>Greatest Managers</h3>
-        <div class="greatest-managers">
+        <h3>Team Managers</h3>
+        <div class="">
           <div class="managers-team">
             <h4>{{ tottenhamName }}</h4>
             <ul>
@@ -343,12 +343,12 @@ export default {
       rivalryDescription: 'The rivalry between Tottenham and Arsenal dates back over a century, with both teams competing for dominance in North London. Tottenham has won 2 league titles, 8 FA Cups, and 4 League Cups, while Arsenal has won 13 league titles, 14 FA Cups, and 2 League Cups. The two teams have faced each other over 200 times in all competitions.',
       tottenhamName: 'Tottenham Hotspur',
       tottenhamTrophies: '2 League Titles, 8 FA Cups, 4 League Cups',
-      tottenhamPlayers: ['Harry Kane', 'Gareth Bale', 'Luka Modric', 'Teddy Sheringham', 'Glenn Hoddle'],
-      tottenhamManagers: ['Bill Nicholson', 'Terry Venables', 'Harry Redknapp', 'Mauricio Pochettino'],
+      tottenhamPlayers: ['Harry Kane', 'Gareth Bale', 'Luka Modric', 'Son', 'Kulesevski', 'Pedro Perro', 'Cristian Romero', 'Lloris', 'Bentacur', 'Bissouma'],
+      tottenhamManagers: ['Mauricio Pochettino'],
       arsenalName: 'Arsenal',
       arsenalTrophies: '13 League Titles, 14 FA Cups, 2 League Cups',
       arsenalPlayers: ['Thierry Henry', 'Dennis Bergkamp', 'Tony Adams', 'Ian Wright', 'Patrick Vieira'],
-      arsenalManagers: ['Herbert Chapman', 'Bertie Mee', 'George Graham', 'Arsene Wenger'],
+      arsenalManagers: ['Arsene Wenger'],
     }
   },
   components: {
